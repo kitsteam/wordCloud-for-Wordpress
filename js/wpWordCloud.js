@@ -195,18 +195,10 @@
 	$('#cloud-slider').load(function() {
 		// 180, 150, 120, 90, 60, 30
 		var theVal = $(this).val() - 1;
-		var values = [180, 150, 120, 90, 60, 30];
+		var values = [240, 220, 200, 180, 160, 140];
 		$(".word-cloud-setting-size-factor").val(values[theVal]); 
 	});
     
-	// slider change function
-	$('#cloud-slider').change(function() {
-		// 180, 150, 120, 90, 60, 30
-		var theVal = $(this).val() - 1;
-		var values = [180, 150, 120, 90, 60, 30];
-		$(".word-cloud-setting-size-factor").val(values[theVal]); 
-	});
-
 	// plus and minus button
 	function incrementValue(e) {
 	  e.preventDefault();
