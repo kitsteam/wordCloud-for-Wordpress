@@ -41,7 +41,7 @@
 		
 		// add container where user can edit settings from frontend
 		if (wpWordCloudSettings.frontendSettings == true) {
-			$(this).find('#cloud-settings').append('<p>Welche Größe sollen die Wörter haben, die in der Wortwolke erscheinen?</p><div class="cloud-slidecontainer"><input type="range" id="cloud-slider" value="3" class="cloud-slider" name="cloud-slider" min="1" max="6" step="1"></div>');
+			$(this).find('#cloud-settings').append('<p>Welche Größe sollen die Wörter haben, die in der Wortwolke erscheinen?</p><div class="cloud-slidecontainer"><input type="range" id="cloud-slider" value="4" class="cloud-slider" name="cloud-slider" min="1" max="6" step="1"></div>');
 
             //Adding colorpicker html
             var colorPickerContent = '' +
@@ -193,17 +193,17 @@
 
 	// slider change function
 	$('#cloud-slider').load(function() {
-		// 180, 150, 120, 90, 60, 30
+		// 300, 250, 200, 150, 100, 50
 		var theVal = $(this).val() - 1;
-		var values = [180, 150, 120, 90, 60, 30];
+		var values = [300, 250, 200, 150, 100, 50];
 		$(".word-cloud-setting-size-factor").val(values[theVal]); 
 	});
     
 	// slider change function
 	$('#cloud-slider').change(function() {
-		// 180, 150, 120, 90, 60, 30
+		// 300, 250, 200, 150, 100, 50
 		var theVal = $(this).val() - 1;
-		var values = [180, 150, 120, 90, 60, 30];
+		var values = [300, 250, 200, 150, 100, 50];
 		$(".word-cloud-setting-size-factor").val(values[theVal]); 
 	});
 
