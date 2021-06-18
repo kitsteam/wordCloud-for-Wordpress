@@ -193,17 +193,17 @@
 
 	// slider change function
 	$('#cloud-slider').load(function() {
-		// 180, 150, 120, 90, 60, 30
+		// 300, 250, 200, 150, 100, 50
 		var theVal = $(this).val() - 1;
-		var values = [180, 150, 120, 90, 60, 30];
+		var values = [300, 250, 200, 150, 100, 50];
 		$(".word-cloud-setting-size-factor").val(values[theVal]); 
 	});
     
 	// slider change function
 	$('#cloud-slider').change(function() {
-		// 180, 150, 120, 90, 60, 30
+		// 300, 250, 200, 150, 100, 50
 		var theVal = $(this).val() - 1;
-		var values = [180, 150, 120, 90, 60, 30];
+		var values = [300, 250, 200, 150, 100, 50];
 		$(".word-cloud-setting-size-factor").val(values[theVal]); 
 	});
 
