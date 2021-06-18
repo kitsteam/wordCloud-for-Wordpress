@@ -41,7 +41,7 @@
 		
 		// add container where user can edit settings from frontend
 		if (wpWordCloudSettings.frontendSettings == true) {
-			$(this).find('#cloud-settings').append('<p>Welche Größe sollen die Wörter haben, die in der Wortwolke erscheinen?</p><div class="cloud-slidecontainer"><input type="range" id="cloud-slider" value="3" class="cloud-slider" name="cloud-slider" min="1" max="6" step="1"></div>');
+			$(this).find('#cloud-settings').append('<p>Welche Größe sollen die Wörter haben, die in der Wortwolke erscheinen?</p><div class="cloud-slidecontainer"><input type="range" id="cloud-slider" value="4" class="cloud-slider" name="cloud-slider" min="1" max="6" step="1"></div>');
 
             //Adding colorpicker html
             var colorPickerContent = '' +
